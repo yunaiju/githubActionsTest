@@ -42,7 +42,7 @@ jobs:
 
     # Docker Image Build
     - name: docker image build
-      run: docker build -t ${{ secrets.DOCKERHUB-USERNAME }}/spring-cicd-test .
+      run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/spring-cicd-test .
 
     # Docker Login for push
     - name: docker login
