@@ -65,7 +65,7 @@ jobs:
         script: |
           docker pull ${{ secrets.DOCKERHUB_USERNAME }}/spring-cicd-test
           docker stop spring-cicd-test || true
-          docker rm spring-cicd-test }} true
+          docker rm spring-cicd-test || true
           docker run -d -p 80:8080 --name spring-cicd-test ${{ secrets.DOCKERHUB_USERNAME }}/spring-cicd-test
           docker system prune -f
 
