@@ -8,6 +8,6 @@ public class Controller {
     @ResponseBody
     @GetMapping("")
     public String main() {
-        return "success to cicd ?";
+        return "ci/cd success !!!";
     }
 }
